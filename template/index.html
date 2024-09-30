@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLMOPS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caviar+Dreams&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css') }}">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="{{ url_for('static', filename='/images/Logo black version.png') }}" alt="Logo" class="logo-img"
+          height="200px" width="300px">
+      </div>
+    </div>
+    <div id="video-container">
+      <div class="banner">
+        <video src="{{ url_for('static', filename='videos/lllllllll.mp4') }}" autoplay loop muted playsinline></video>
+      </div>
+    </div>
+  </header>
+
+  <div class="content-container">
+    <div class="abthero">
+      <div class="abttitle" id="abttitle">
+        <p class="gradient-text">LLMOps Unveiled</p>
+      </div>
+      <div class="abtinfo" id="abtinfo">
+        <p class="gradient-text" id="row0">Optimizing and Managing Large Language Model</p>
+        <p id="row1">LLMOpsCode.com is the go-to site for anyone working with Large Language Model (LLM) deployment and
+          monitoring. We provide practical tools and clear information to help developers, data scientists, and AI
+          professionals handle LLM operations effectively. Our site covers key areas like deployment methods, monitoring
+          systems, performance tuning, and scaling techniques<br> <br></p>
+        <!-- <p id="row2"> </p> to add more para  -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Container -->
+  <div id="card-container">
+    <div class="card">
+      <div class="card-header">Gen AI Blog</div>
+      <div class="card-content">
+        <div class="link-container">
+          <p>Meta’s SAM-2: The Future of Real-Time Visual Segmentation
+          </p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/08/meta-sam-2/" target="_blank"
+            class="navigate-btn">&#8594</a>
+        </div>
+
+        <div class="link-container">
+          <p>How to Move Generative AI Applications to Production?</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/05/move-generative-ai-applications-to-production/"
+            target="_blank" class="navigate-btn">&#8594</a>
+        </div>
+
+        <div class="link-container">
+          <p>How to Build AI Agents Using “Tool Use”?</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/07/ai-agents-using-tool-use/" target="_blank"
+            class="navigate-btn">&#8594</a>
+        </div>
+        <div class="link-container">
+          <p>How to Build a LangChain Chatbot with Memory?</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/06/langchain-chatbot-with-memory/" target="_blank"
+            class="navigate-btn">&#8594</a>
+        </div>
+        <div class="link-container">
+          <p>Stable Diffusion 3: Guide to the Latest Text-to-Image Model by Stability AI</p>
+          <a href="https://www.analyticsvidhya.com/b&#8594g/2024/06/stable-diffusion-3/" target="_blank"
+            class="navigate-btn">&#8594</a>
+
+
+        </div>
+
+
+        <div class="link-container">
+          <p>How to Find the Best Multilingual Embedding Model for Your RAG?</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/07/multilingual-embedding-model-for-rag/" target="_blank"
+            class="navigate-btn">&#8594</a>
+        </div>
+
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Python and more</div>
+      <div class="card-content">
+
+        <div class="link-container">
+          <p>Multimodal Search Image Application with Titan Embedding</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/05/multimodal-search-image-application/" target="_blank"
+            class="navigate-btn">&#8594</a>
+        </div>
+        <div class="link-container">
+          <p>Flask Application Dockerization: Creating a Docker Image</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/04/flask-application-dockerization-creating-a-docker-image/"
+            target="_blank" class="navigate-btn">&#8594</a>
+        </div>
+        <div class="link-container">
+          <p>Implementing CI/CD with Jenkins for Flask Application Deployment</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/04/ci-cd-with-jenkins/" target="_blank"
+            class="navigate-btn">&#8594</a>
+        </div>
+        <div class="link-container">
+          <p>Deploying Machine Learning Model Using Flask on AWS with Gunicorn and Nginx</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/04/ml-using-flask-on-aws-gunicorn-nginx/" target="_blank"
+            class="navigate-btn">&#8594</a>
+        </div>
+        <div class="link-container">
+          <p>PyCirclize: Circular Data Visualization, from R to Python</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/04/pycirclize-circular-data-visualization-from-r-to-python/"
+            target="_blank" class="navigate-btn">&#8594</a>
+        </div>
+        <div class="link-container">
+          <p>How to Deploy a Machine Learning Model using Flask?</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/03/how-to-deploy-a-machine-learning-model-using-flask/"
+            target="_blank" class="navigate-btn">&#8594</a>
+        </div>
+        <div class="link-container">
+          <p>KL Divergence: The Information Theory Metric that Revolutionized Machine Learning</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/07/kl-divergence/" target="_blank"
+            class="navigate-btn">&#8594</a>
+        </div>
+        <div class="link-container">
+          <p>Segment Anything Model(SAM): Meta’s Groundbreaking Segment Anything Model</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/07/metas-segment-anything-model/" target="_blank"
+            class="navigate-btn">&#8594</a>
+        </div>
+
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">GIT</div>
+      <div class="card-content">
+        <div class="link-container">
+          <p>Git Merge Guide</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/06/git-merge/" target="_blank"
+            class="navigate-btn">&#8594</a>
+        </div>
+        <div class="link-container">
+          <p>How to Set Upstream Branch in Git?</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/06/upstream-branch-in-git/" target="_blank"
+            class="navigate-btn">&#8594</a>
+        </div>
+        <div class="link-container">
+          <p>Git Reset vs Revert: When to Use Each Command?</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/06/git-reset-vs-revert/" target="_blank"
+            class="navigate-btn">&#8594</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="card">
+      <div class="card-header">PROMPT ENGINEERING</div>
+      <div class="card-content">
+
+        <div class="link-container">
+          <p>What is Self-Consistency in Prompt Engineering?</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/07/self-consistency-in-prompt-engineering/" target="_blank"
+            class="navigate-btn">&#8594</a>
+        </div>
+
+        <div class="link-container">
+          <p>Implementing the Tree of Thoughts Method in AI</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/07/tree-of-thoughts/" target="_blank"
+            class="navigate-btn">&#8594</a>
+        </div>
+
+        <div class="link-container">
+          <p>What is the Chain of Numerical Reasoning in Prompt Engineering?</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/07/chain-of-numerical-reasoning/" target="_blank"
+            class="navigate-btn">&#8594</a>
+        </div>
+
+        <div class="link-container">
+          <p>How to Build a Conversational Chatbot with GPT-4o?</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/07/conversational-chatbot-with-gpt4o/" target="_blank"
+            class="navigate-btn">&#8594</a>
+        </div>
+
+        <div class="link-container">
+          <p>What is the Chain of Density in Prompt Engineering?</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/07/chain-of-density-in-prompt-engineering/" target="_blank"
+            class="navigate-btn">&#8594</a>
+        </div>
+
+        <div class="link-container">
+          <p>Chain of Verification: Prompt Engineering for Unparalleled Accuracy</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/07/chain-of-verification/" target="_blank"
+            class="navigate-btn">&#8594</a>
+        </div>
+        <div class="link-container">
+          <p>What is Skeleton of Thoughts and its Python Implementation?</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/07/skeleton-of-thoughts/" target="_blank"
+            class="navigate-btn">&#8594</a>
+        </div>
+        <div class="link-container">
+          <p>What is an Algorithm of Thoughts (AoT) and How does it Work?</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/07/algorithm-of-thoughts/" target="_blank"
+            class="navigate-btn">&#8594</a>
+        </div>
+        <div class="link-container">
+          <p>What is the Chain of Questions in Prompt Engineering?</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/08/chain-of-questions-in-prompt-engineering/"
+            target="_blank" class="navigate-btn">&#8594</a>
+        </div>
+        <div class="link-container">
+          <p>What is Power of Chain of Knowledge in Prompt Engineering?</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/07/chain-of-knowledge-in-prompt-engineering/"
+            target="_blank" class="navigate-btn">&#8594</a>
+        </div>
+        <div class="link-container">
+          <p>What is the Chain of Emotion in Prompt Engineering?</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/07/chain-of-emotion-in-prompt-engineering/" target="_blank"
+            class="navigate-btn">&#8594</a>
+        </div>
+        <div class="link-container">
+          <p>What is the Chain of Symbol in Prompt Engineering?</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/07/chain-of-symbol/" target="_blank"
+            class="navigate-btn">&#8594</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h1>LLM</h1>
+      </div>
+      <div class="card-content">
+        <div class="link-container">
+          <p>The Architecture of Language Models: Big vs. Small</p>
+          <a href="{{ url_for('llm_1') }}" class="navigate-btn">&#8594;</a>
+
+
+          <!-- <a href="llm_1.html" class="navigate-btn">&#8594</a> -->
+        </div>
+        <div class="link-container">
+          <p>Fundamentals of LLMs </p>
+          <!-- <a href="llm_2.html" class="navigate-btn">&#8594</a> -->
+          <a href="{{ url_for('llm_2') }}" class="navigate-btn">&#8594</a>
+
+        </div>
+        <div class="link-container">
+          <p>Top 5 Frameworks for Building AI Agents in 2024</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/07/ai-agent-frameworks/" class="navigate-btn">&#8594</a>
+        </div>
+        <div class="link-container">
+          <p>AI Agents: A Deep Dive into LangChain’s Agent Framework</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/07/langchains-agent-framework/"
+            class="navigate-btn">&#8594</a>
+        </div>
+        <div class="link-container">
+          <p>The Rise of LLM Agents: Revolutionizing AI with Iterative Workflows</p>
+          <a href="https://www.analyticsvidhya.com/blog/2024/07/llm-agents-with-iterative-workflows/"
+            class="navigate-btn">&#8594</a>
+        </div>
+        <div class="link-container">
+        <p>7 Essential Steps to Master Large Language Models</p>
+        <a href="https://www.analyticsvidhya.com/blog/2024/06/steps-to-master-large-language-models/"
+          class="navigate-btn">&#8594</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="card">
+    <div class="card-header">LLMOPS</div>
+    <div class="card-content">
+      <div class="link-container">
+        <p>LLMOps: Landscape of Large Language Model Operations</p>
+        <a href="{{ url_for('llmops_1') }}" class="navigate-btn">&#8594</a>
+
+        <!-- <a href="llmops_1.html" class="navigate-btn">&#8594</a> -->
+      </div>
+      <div class="link-container">
+        <p>Building and Implementing Pinecone Vector Databases</p>
+        <a href="https://www.analyticsvidhya.com/blog/2024/06/pinecone-vector-databases/"
+          class="navigate-btn">&#8594</a>
+      </div>
+      <div class="link-container">
+        <p>Debugging And Testing LLMs in LangSmith
+        </p>
+        <a href="https://www.analyticsvidhya.com/blog/2024/06/llms-in-langsmith/" class="navigate-btn">&#8594</a>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="content-container">
+    <div class="abthero">
+    </div>
+    <div class="abtinfo" id="abtinfo">
+      <p id="row1" class="row3">We concentrate on the crucial areas of LLM deployment and monitoring, providing
+        actionable insights
+        for professionals working with these powerful AI tools. Our site offers targeted guidance on implementing
+        efficient deployment pipelines, setting up robust monitoring systems, and optimizing LLM performance in
+        production environments. While we touch on related topics in Python and Generative AI, our main focus is
+        equipping you with the knowledge to effectively manage and maintain LLMs in real-world applications. Whether
+        you're experienced or new to LLMs, you'll find useful guides and tips here. LLMOpsCode aims to keep you
+        informed about the latest developments in LLM technology, helping you implement and manage these powerful
+        tools successfully in your projects.. LLMOpsCode is your go-to resource for mastering the operational
+        challenges of Large Language Models.</p>
+      <!-- <p id="row2"></p> -->
+    </div>
+  </div>
+  </div>
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo-container">
+        <img src="{{ url_for('static', filename='/images/WhatsApp Image 2024-07-21 at 13.36.37_5144ad6c.jpg') }}"
+          class="footer-logo">
+      </div>
+      <div class="footer-content">
+        <div class="footer-left">
+          <p id="contact-us">Email us at tech@llmopscode.com</p>
+          <div class="social-media-icons">
+            <a href="#" class="social-icon"><img
+                src="{{ url_for('static', filename='/images/2021_Facebook_icon.svg') }}"></a>
+            <a href="#" class="social-icon"><img src="{{ url_for('static', filename='/images/X_logo_2023.svg') }}"></a>
+            <a href="#" class="social-icon"><img
+                src="{{ url_for('static', filename='/images/Linkedin-logo-blue-In-square-40px.png') }}"></a>
+            <a href="#" class="social-icon"><img
+                src="{{ url_for('static', filename='/images/Instagram_icon.png') }}"></a>
+          </div>
+          <p id="Copyright">Copyright © 2024 LLMOpsCode - All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+
+</html>
