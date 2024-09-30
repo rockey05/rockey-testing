@@ -1,4 +1,3 @@
-/* General Reset and Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Libre+Barcode+128+Text&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -9,7 +8,6 @@
 
 @font-face {
   font-family: 'LemonMilkBold';
-  /* src: url('LEMONMILK-Bold.otf') format('opentype'); */
   src: url('../fonts/LEMONMILK-Bold.otf') format('opentype');
 
   font-weight: bold;
@@ -18,7 +16,6 @@
 
 @font-face {
   font-family: 'LemonMilk';
-  /* src: url('LEMONMILK-Regular.otf') format('opentype'); */
   src: url('../fonts/LEMONMILK-Regular.otf') format('opentype');
 
   font-weight: lighter;
@@ -286,7 +283,6 @@ header {
 }
 
 .card:nth-child(1) {
-  /* background-image: url('Firefly generative artificial intelligence 7699.jpg'); */
   background-image: url('../images/Firefly generative artificial intelligence 7699.jpg');
   background-color: #1A181B;
   animation-delay: 0.3s;
@@ -312,7 +308,6 @@ header {
 }
 
 .card:nth-child(3) {
-  /* background-image: url('Firefly Global information tracker git 29566.jpg'); */
   background-image: url('../images/Firefly Global information tracker git 29566.jpg');
 
   background-color: #1A181B;
@@ -326,7 +321,6 @@ header {
 }
 
 .card:nth-child(4) {
-  /* background-image: url('Create\ an\ image\ of\ a\ person\ crafting\ a\ text\ prompt\,\ with\ thought\ bubbles\ showing\ refined\ versions\ of.jpeg'); */
   background-image: url('../images/Create\ an\ image\ of\ a\ person\ crafting\ a\ text\ prompt\,\ with\ thought\ bubbles\ showing\ refined\ versions\ of.jpeg');
   background-color: #1A181B;
   animation-delay: 0.9s;
@@ -339,7 +333,6 @@ header {
 }
 
 .card:nth-child(5) {
-  /* background-image: url('Create\ a\ split-screen\ image.\ On\ one\ side\,\ show\ a\ person\ typing\ on\ a\ keyboard.jpeg'); */
   background-image: url('../images/Create\ a\ split-screen\ image.\ On\ one\ side\,\ show\ a\ person\ typing\ on\ a\ keyboard.jpeg');
   background-color: #1A181B;
   animation-delay: 1.1s;
@@ -352,7 +345,6 @@ header {
 }
 
 .card:nth-child(6) {
-  /* background-image: url('Create an image representing LLMOps (Large Language Model Operations), which involves the management.jpeg'); */
   background-image: url('../images/Create an image representing LLMOps (Large Language Model Operations), which involves the management.jpeg');
   background-color: #1A181B;
   animation-delay: 1.3s;
@@ -364,7 +356,6 @@ header {
     0 24px 48px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer Styles */
 footer {
   background-color: #ffffff;
   color: black;
@@ -437,7 +428,6 @@ footer #Copyright {
   transform: scale(1.4);
 }
 
-/* Responsive Styles */
 @media screen and (max-width: 1024px) {
   #card-container {
     justify-content: center;
@@ -467,11 +457,8 @@ footer #Copyright {
 
   .row3 {
     height: 40rem;
-    /* Adjust height for tablets */
     font-size: 0.6rem;
-    /* Adjust font size for tablets */
     padding: 15px;
-    /* Adjust padding for tablets */
   }
 }
 
@@ -503,11 +490,8 @@ footer #Copyright {
 
   .row3 {
     height: 48rem;
-    /* Adjust height for tablets */
     font-size: 0.9rem;
-    /* Adjust font size for tablets */
     padding: 15px;
-    /* Adjust padding for tablets */
   }
 }
 
@@ -539,11 +523,9 @@ footer #Copyright {
 
   .row3 {
     height: 20rem;
-    /* Adjust height for mobile devices */
     font-size: 0.8rem;
-    /* Adjust font size for mobile devices */
     padding: 10px;
-    /* Adjust padding for mobile devices */
+
   }
 
   .abtinfo #row0 {
@@ -571,5 +553,81 @@ footer #Copyright {
 
   .footer-left #contact-us {
     font-size: 2rem;
+  }
+}
+
+
+.contact-us-btn {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #f9f9f9 50%, #272727 50%);
+  background-size: 200%;
+  background-position: right;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px #1a1a1a, 6px 6px 20px #000000;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-position 0.4s ease, transform 0.3s ease;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.contact-us-btn:hover {
+  background-position: left;
+  transform: scale(1.05);
+  color: black;
+}
+
+.contact-us-btn:active {
+  background-color: #ffffff;
+}
+
+.contact-us-btn .arrow {
+  font-size: 1.5rem;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.contact-us-btn:hover .arrow {
+  transform: translateX(5px);
+}
+
+
+@media (max-width: 1024px) {
+  .contact-us-btn {
+    padding: 10px 18px;
+    font-size: 1rem;
+    top: 15px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-us-btn {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+    top: 10px;
+    right: 10px;
+    border-radius: 8px;
+  }
+
+  .contact-us-btn .arrow {
+    font-size: 1.2rem;
   }
 }

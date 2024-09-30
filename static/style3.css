@@ -23,7 +23,6 @@ body {
   background-color: #343434;
   border-radius: 8px;
   box-shadow: 5px 5px 15px #1a1a1a, 10px 10px 30px #000000;
-
   background-image: url('../images/openart-image_haY7Pu2t_1725187059065_raw.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,7 +81,6 @@ body {
   border: none;
   border-radius: 10px;
   box-shadow: 3px 3px 8px #1a1a1a, 6px 6px 20px #000000;
-  /* 3D Drop Shadows */
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -110,6 +108,7 @@ body {
   transform: translateX(5px);
 }
 
+/* Box Section */
 .box {
   width: 65%;
 }
@@ -144,6 +143,7 @@ body {
   color: #555;
 }
 
+/* Footer */
 footer {
   width: 100%;
   margin-top: 5rem;
@@ -157,13 +157,10 @@ footer {
   font-family: "Libre Barcode 128 Text", system-ui;
 }
 
-
 footer #Copyright {
-  /* margin-top: 30px; */
   font-size: 18px;
   font-family: Outfit;
 }
-
 
 .footer-container {
   display: flex;
@@ -179,7 +176,6 @@ footer #Copyright {
   width: 100%;
   object-fit: contain;
 }
-
 
 .footer-content {
   display: flex;
@@ -217,4 +213,89 @@ footer #Copyright {
 
 .social-icon img:hover {
   transform: scale(1.4);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-left: 2rem;
+    padding: 15px;
+    max-width: 95vw;
+  }
+
+  .layout-wrapper {
+    flex-direction: column;
+  }
+
+  .headings {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .main-heading h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-left: 1rem;
+    padding: 10px;
+    max-width: 98vw;
+  }
+
+  .heading-button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  .main-heading h1 {
+    font-size: 1.8rem;
+  }
+
+  .footer-container {
+    height: 20rem;
+  }
+
+  .footer-left p {
+    font-size: 1rem;
+  }
+
+  .social-icon img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    margin-left: 0.5rem;
+    padding: 8px;
+  }
+
+  .heading-button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .main-heading h1 {
+    font-size: 1.5rem;
+  }
+
+  .footer-container {
+    height: 18rem;
+  }
+
+  .footer-left p {
+    font-size: 0.8rem;
+  }
+
+  .social-icon img {
+    width: 40px;
+    height: 40px;
+  }
 }
